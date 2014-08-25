@@ -1,0 +1,18 @@
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+apply plugin: 'java'
+apply plugin: 'checkstyle'
+
+compileJava.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+checkstyle.configFile = file('checkstyle.xml')
+
+group = 'de.ralfhergert'
+version = '0.1'
+
+repositories {
+	mavenCentral()
+}
