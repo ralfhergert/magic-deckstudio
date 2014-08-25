@@ -1,5 +1,7 @@
 package de.ralfhergert.deckstudio.magic;
 
+import de.ralfhergert.deckstudio.magic.event.StepEvent;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,4 +19,7 @@ public class Situation {
     private Turn currentTurn;
 
     private Player activePlayer;
+
+    public void receiveEvent(StepEvent event) {
+    }
 }
