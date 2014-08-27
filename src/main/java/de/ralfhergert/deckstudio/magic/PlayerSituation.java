@@ -9,7 +9,7 @@ import java.util.List;
 public class PlayerSituation {
 
     private int lifePoints = 20;
-    private int manapool = 0;
+    private List<Mana> manaPool = new ArrayList<Mana>();
     private List<Card> hand = new ArrayList<Card>();
     private List<Card> library = new ArrayList<Card>();
     private List<Card> graveyard = new ArrayList<Card>();
