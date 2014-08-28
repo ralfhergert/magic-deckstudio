@@ -1,6 +1,7 @@
 package de.ralfhergert.deckstudio.magic;
 
 import de.ralfhergert.deckstudio.magic.event.StepEvent;
+import de.ralfhergert.deckstudio.magic.step.Step;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +17,7 @@ public class Situation {
     private List<Card> exile = new ArrayList<Card>();
     private List<Card> command = new ArrayList<Card>();
     private List<Card> outsideTheGame = new ArrayList<Card>();
-    private Turn currentTurn;
+    private Step nextStep;
 
     private Player activePlayer;
 
